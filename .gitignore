@@ -1,0 +1,13 @@
+bin/ 
+obj/ 
+
+
+.vscode/ 
+.idea/ 
+
+
+.env 
+
+
+*.sqlite 
+*.db 
