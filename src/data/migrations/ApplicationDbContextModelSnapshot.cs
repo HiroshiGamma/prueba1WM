@@ -34,6 +34,10 @@ namespace api.src.data.migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Rut")
                         .IsRequired()
                         .HasColumnType("TEXT");

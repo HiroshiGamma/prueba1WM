@@ -10,8 +10,8 @@ using api.src.data;
 namespace api.src.data.migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241002231955_DbContext")]
-    partial class DbContext
+    [Migration("20241002234330_AddSeeders")]
+    partial class AddSeeders
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -34,6 +34,10 @@ namespace api.src.data.migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Genero")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("TEXT");
 

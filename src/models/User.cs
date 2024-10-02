@@ -11,6 +11,8 @@ namespace api.src.models
 
         public String Rut {get;set;} = string.Empty;
 
+        public String Nombre {get;set;} = string.Empty;
+
         public String Correo {get;set;} = string.Empty;
 
         public String Genero {get;set;} = string.Empty;

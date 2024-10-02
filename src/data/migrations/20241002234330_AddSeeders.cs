@@ -5,7 +5,7 @@
 namespace api.src.data.migrations
 {
     /// <inheritdoc />
-    public partial class DbContext : Migration
+    public partial class AddSeeders : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,6 +17,7 @@ namespace api.src.data.migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Rut = table.Column<string>(type: "TEXT", nullable: false),
+                    Nombre = table.Column<string>(type: "TEXT", nullable: false),
                     Correo = table.Column<string>(type: "TEXT", nullable: false),
                     Genero = table.Column<string>(type: "TEXT", nullable: false),
                     FechaNacimiento = table.Column<string>(type: "TEXT", nullable: false)
