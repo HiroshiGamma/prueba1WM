@@ -24,5 +24,17 @@ namespace api.src.mappers
             };
         }
 
+        public static User toUserFromUserDto(this CreateUserRequestDto createUserRequestDto)
+        {
+            return new User
+            {
+                Rut = createUserRequestDto.Rut,
+                Nombre = createUserRequestDto.Nombre,
+                Correo = createUserRequestDto.Correo,
+                Genero = createUserRequestDto.Genero,
+                FechaNacimiento = createUserRequestDto.FechaNacimiento
+            };
+        }
+
     }
 }

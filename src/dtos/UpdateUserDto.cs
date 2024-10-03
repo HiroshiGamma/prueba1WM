@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace api.src.models
+namespace api.src.dtos
 {
-    public class User
+    public class UpdateUserDto
     {
-        public int Id {get;set;}
-
         public String Rut {get;set;} = string.Empty;
 
         public String Nombre {get;set;} = string.Empty;
@@ -18,6 +16,5 @@ namespace api.src.models
         public String Genero {get;set;} = string.Empty;
 
         public String FechaNacimiento {get;set;} = string.Empty;
-        
     }
 }
